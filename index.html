@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="outlines.css">
+    <meta charset="utf-8">
     <title>Анна. Личный блог</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Spectral+SC:wght@700&display=swap" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
   </head>
 
   <body>
     <header class="page-header">
-      <a class="page-header__logo">
-        <img class="page-header__logo-image" src="img/logo.png" alt="Перейти на главную страницу блога">
-      </a>
-      <nav class="main-nav">
-        <ul class="main-nav__list">
+      <nav class="page-nav">
+        <a class="page-header__logo">
+          <img class="page-header__logo-image" src="img/logo.png" alt="Перейти на главную страницу блога">
+        </a>
+        <ul class="page-nav__list">
           <li>
             <a href="#article">Статья</a>
           </li>
@@ -29,15 +33,15 @@
       </nav>
     </header>
     <main class="page-main">
-      <h1 class="visualli-hidden">Личный блог Анны</h1>
+      <h1 class="visually-hidden">Личный блог Анны</h1>
       <section class="article">
         <a name="article"></a>
-        <h2 class="title article__title">Все статьи</h2>
-        <button class="article__button">Выбрать тему</button>
+        <h2 class="title title--left">Все статьи</h2>
+        <button class="button-choice">Выбрать тему</button>
         <ul class="article__list">
           <li class="article__item">
             <a href="motivation.html">
-              <img class="article__img" src="img/berlin.jpg" alt="Улица Берлина">
+              <img class="article__img" src="img/berlin.jpg" alt="Улица Берлина" width="387" height="268">
               <h3>Путешествие в Берлин в августе</h3>
               <p class="article__text">Летний месяц я провела в столице Германии вместе с друзьями. И вот как это было!</p>
               <span class="article__tag">Теги: путешествия</span>
@@ -46,7 +50,7 @@
           </li>
           <li class="article__item">
             <a href="motivation.html">
-              <img class="article__img" src="img/coffee.jpg" alt="Две кружки холодного кофе">
+              <img class="article__img" src="img/coffee.jpg" alt="Две кружки холодного кофе" width="387" height="268">
               <h3>Где выпить колдбрю в Москве</h3>
               <p class="article__text">Собрала для вас список любимых кофеен, где подают лучший летний напиток.</p>
               <span class="article__tag">Теги: город</span>
@@ -55,16 +59,16 @@
           </li>
           <li class="article__item">
             <a href="motivation.html">
-              <img class="article__img" src="img/books.jpg" alt="Стопка книг">
+              <img class="article__img" src="img/books.jpg" alt="Стопка книг" width="387" height="268">
               <h3>Прочитано: книжные рекомендации</h3>
               <p class="article__text">Рассказываю о прочитанных за последнее время книгах: фавориты и провалы.</p>
               <span class="article__tag">Теги: книги</span>
               <time class="article__time" datetime="2020-07-15">15.07.2020</time>
             </a>
           </li>
-          <li class="article__item">
+          <li class="article__item article__item--big">
             <a href="motivation.html">
-              <img class="article__img" src="img/rose.jpg" alt="Куст розы">
+              <img class="article__img" src="img/rose.jpg" alt="Куст розы"  width="590" height="552">
               <h3>Снимки на плёнку</h3>
               <p class="article__text">Поделилась с вами весенними фотографиями, и секретами удачных снимков.</p>
               <span class="article__tag">Теги: фотографии</span>
@@ -73,7 +77,7 @@
           </li>
           <li class="article__item">
             <a href="motivation.html">
-              <img class="article__img" src="img/cheesecake.jpg" alt="Кусочек чизкейка">
+              <img class="article__img" src="img/cheesecake.jpg" alt="Кусочек чизкейка" width="590" height="552">
               <h3>Домашний чизкейк</h3>
               <p class="article__text">Что может быть лучше чизкейка с сезонными ягодами? Только домашний чизкейк!</p>
               <span class="article__tag">Теги: рецепты</span>
@@ -86,7 +90,7 @@
       <section class="about-me">
         <a name="about-me"></a>
         <h2 class="title">Обо мне</h2>
-        <img class="about-me__img" src="img/ann.jpg" alt="Анна на пляже">
+        <img class="about-me__img" src="img/ann.jpg" alt="Анна на пляже"  width="590" height="693">
         <p class="about-me__text">Всем привет! Меня зовут Аня, и это мой личный блог. Здесь ты найдёшь рассказы о моих путешествиях, снимки на плёнку, рецепты, обзоры на книги. В общем, тексты о том, что мне инетресно.</p>
         <p class="about-me__text">Я работаю копирайтером, поэтому мой блоге — это ещё и моё портфолио. Ниже размещены несколько моих лучших рабочих текстов. Буду рада новым сотрудничествам!</p>
         <p class="about-me__text">Если вы хотите написать мне — это можно сделать в соцсетях или через <a class="about-me__link" href="#Write-me">форму</a>. Всегда приятно услышать обратную связь от читателей и познакомиться поближе.</p>
@@ -97,23 +101,23 @@
         <h2 class="title" id="portfolio">Портфолио</h2>
         <div class="portfolio__wrapper">
           <ul class="portfolio__list">
-            <li class="portfolio__item">
+            <li class="portfolio__item portfolio__item--studing">
               <a href="motivation.html">
-                <b>Блог HTML Academy</b>
+                <p class="portfolio__source">Блог HTML Academy</p >
                 <h3 class="portfolio__title">«Как учиться продуктивно»</h3>
                 <p class="portfolio__text">Про основные методы обучения, которые помогут быстро и надолго запомнить информацию.</p>
               </a>
             </li>
-            <li class="portfolio__item">
+            <li class="portfolio__item portfolio__item--kiss">
               <a href="motivation.html">
-                <b>Журнал «LNK»</b>
+                <p class="portfolio__source">Журнал «LNK»</p >
                 <h3 class="portfolio__title">«Зачем поцелуи нужны человеку? И какие они бывают»</h3>
                 <p class="portfolio__text">Поцелуи — повсеместная ежедневная практика. Но зачем люди целуются? Какие смысли вкладывают в этот ритуал? И где корни этой практики?</p>
               </a>
             </li>
-            <li class="portfolio__item">
+            <li class="portfolio__item portfolio__item--distant">
               <a href="motivation.html">
-                <b>Журнал «Т — Л»</b>
+                <p class="portfolio__source">Журнал «Т — Л»</p >
                 <h3 class="portfolio__title">«Советы по эффективной удалённой работе»</h3>
                 <p class="portfolio__text">Поделилась лайфхаками, которые помогают мне работать продуктивно из дома. </p>
               </a>
@@ -127,11 +131,11 @@
         <div class="write-me__wrapper">
           <form action="" method="POST">
             <label class="write-me__name-label" for="name-id">Ваше имя</label>
-            <input class="write-me__name-input" type="text" name="name" id="name-id" value="Иван Иванов" required>
+            <input class="write-me__input" type="text" name="name" id="name-id" placeholder="Иван Иванов" required>
             <label class="write-me__email-label" for="email-id">Email</label>
-            <input class="write-me__email" type="email" name="email" id="email-id" value="google@gmail.com" required> 
+            <input class="write-me__input" type="email" name="email" id="email-id" placeholder="google@gmail.com" required> 
             <label class="write-me__textarea-label" for="message-id">Сообщение</label>
-            <textarea class="write-me__textarea" name="message" id="message-id" rows="8" cols="80" required>Напишите здесь ваше сообщение</textarea>
+            <textarea class="write-me__input write-me__input--textarea" name="message" id="message-id" rows="8" cols="80" placeholder="Напишите здесь ваше сообщение" required></textarea>
             <input class="button" type="submit" value="Отправить">
           </form>
         </div>
