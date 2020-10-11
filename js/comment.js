@@ -3,6 +3,7 @@ let commentList = document.querySelector('.comment__list');
 let commentText = document.querySelector('.comment__textarea');
 let commentName = document.querySelector('.commentator-name');
 let commentEmail = document.querySelector('.commentator-email');
+let submitButton = document.querySelector('.submit-button');
 
 commentForm.onsubmit = function (evt) {
   evt.preventDefault();
@@ -25,3 +26,13 @@ commentForm.onsubmit = function (evt) {
   commentList.append(newComment);
 };
 
+commentText.oninput = function () {
+
+  if (commentText.value.length > 200 || commentText.value.length < 10) {
+    commentText.classList.add('warning');
+    submitButton.disabled = true;
+  } else {
+    commentText.classList.remove('warning');
+    submitButton.disabled = false;
+  }
+};
