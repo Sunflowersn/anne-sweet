@@ -13,7 +13,7 @@
   <body>
     <header class="page-header">
       <nav class="page-nav">
-        <a class="page-header__logo">
+        <a class="page-header__logo" href="index.html">
           <img class="page-header__logo-image" src="img/logo.png" alt="Перейти на главную страницу блога">
         </a>
         <ul class="page-nav__list">
@@ -37,7 +37,15 @@
       <section class="article">
         <a name="article"></a>
         <h2 class="title title--left">Все статьи</h2>
-        <button class="button-choice">Выбрать тему</button>
+        <select class="button-choice" name="choice" id="choice-id">
+          <option value="none" hidden>Выбрать тему</option>
+          <option value="city">Город</option>
+          <option value="books">Книги</option>
+          <option value="travels">Путешествия</option>
+          <option value="recipe">Рецепты</option>
+          <option value="photo">Фотографии</option>
+          <option value="all">Все темы</option>
+        </select>
         <ul class="article__list">
           <li class="article__item">
             <a href="motivation.html">
@@ -69,76 +77,90 @@
           <li class="article__item article__item--big">
             <a href="motivation.html">
               <img class="article__img" src="img/rose.jpg" alt="Куст розы"  width="590" height="552">
-              <h3>Снимки на плёнку</h3>
-              <p class="article__text">Поделилась с вами весенними фотографиями, и секретами удачных снимков.</p>
-              <span class="article__tag">Теги: фотографии</span>
-              <time class="article__time" datetime="2020-06-29">29.06.2020</time>
+              <div class="article__item--big__conteiner">
+                <h3>Снимки на плёнку</h3>
+                <p class="article__text">Поделилась с вами весенними фотографиями, и секретами удачных снимков.</p>
+                <span class="article__tag">Теги: фотографии</span>
+                <time class="article__time" datetime="2020-06-29">29.06.2020</time>
+              </div>
             </a>
           </li>
-          <li class="article__item">
+          <li class="article__item article__item--big">
             <a href="motivation.html">
               <img class="article__img" src="img/cheesecake.jpg" alt="Кусочек чизкейка" width="590" height="552">
-              <h3>Домашний чизкейк</h3>
-              <p class="article__text">Что может быть лучше чизкейка с сезонными ягодами? Только домашний чизкейк!</p>
-              <span class="article__tag">Теги: рецепты</span>
-              <time class="article__time" datetime="2020-06-24">24.06.2020</time>
+              <div class="article__item--big__conteiner">
+                <h3>Домашний чизкейк</h3>
+                <p class="article__text">Что может быть лучше чизкейка с сезонными ягодами? Только домашний чизкейк!</p>
+                <span class="article__tag">Теги: рецепты</span>
+                <time class="article__time" datetime="2020-06-24">24.06.2020</time>
+              </div>
             </a>
           </li>
         </ul>
-        <button class="button">Показать ещё</button>
+        <div class="button__wrap">
+          <button class="button">Показать ещё</button>
+        </div>
       </section>
       <section class="about-me">
         <a name="about-me"></a>
         <h2 class="title">Обо мне</h2>
-        <img class="about-me__img" src="img/ann.jpg" alt="Анна на пляже"  width="590" height="693">
-        <p class="about-me__text">Всем привет! Меня зовут Аня, и это мой личный блог. Здесь ты найдёшь рассказы о моих путешествиях, снимки на плёнку, рецепты, обзоры на книги. В общем, тексты о том, что мне инетресно.</p>
-        <p class="about-me__text">Я работаю копирайтером, поэтому мой блоге — это ещё и моё портфолио. Ниже размещены несколько моих лучших рабочих текстов. Буду рада новым сотрудничествам!</p>
-        <p class="about-me__text">Если вы хотите написать мне — это можно сделать в соцсетях или через <a class="about-me__link" href="#Write-me">форму</a>. Всегда приятно услышать обратную связь от читателей и познакомиться поближе.</p>
-        <p class="about-me__text">Приятного чтения!</p>
-        <blockquote class="about-me__motto">Я верю, что каждый раз пробуя новое, выходящее за зону моего комфорта, я действительно узнаю настояющую себя. </blockquote>
+        <div class="about-me__wrapper">
+          <img class="about-me__img" src="img/ann.jpg" alt="Анна на пляже"  width="590" height="693">
+          <div class="about-me__container">
+            <p class="about-me__text">Всем привет! Меня зовут Аня, и это мой личный блог. <br>Здесь ты найдёшь рассказы о моих путешествиях, снимки <br>на плёнку, рецепты, обзоры на книги. В общем, тексты о том, что мне инетресно.</p>
+            <p class="about-me__text">Я работаю копирайтером, поэтому мой блоге — это ещё и моё портфолио. Ниже размещены несколько моих лучших рабочих текстов. Буду рада новым сотрудничествам!</p>
+            <p class="about-me__text">Если вы хотите написать мне — это можно сделать в соцсетях или через <a class="about-me__link" href="#Write-me">форму</a>. Всегда приятно услышать обратную связь <br>от читателей и познакомиться поближе.</p>
+            <p class="about-me__text">Приятного чтения!</p>
+            <blockquote class="about-me__motto">Я верю, что каждый раз пробуя новое, выходящее за зону моего комфорта, я действительно узнаю настояющую себя. </blockquote>
+          </div>
+        </div>
       </section>
       <section class="portfolio">
         <h2 class="title" id="portfolio">Портфолио</h2>
-        <div class="portfolio__wrapper">
-          <ul class="portfolio__list">
+        <ul class="portfolio__list">
             <li class="portfolio__item portfolio__item--studing">
               <a href="motivation.html">
                 <p class="portfolio__source">Блог HTML Academy</p >
                 <h3 class="portfolio__title">«Как учиться продуктивно»</h3>
-                <p class="portfolio__text">Про основные методы обучения, которые помогут быстро и надолго запомнить информацию.</p>
+                <p>Про основные методы обучения, которые помогут быстро и надолго запомнить информацию.</p>
               </a>
             </li>
             <li class="portfolio__item portfolio__item--kiss">
               <a href="motivation.html">
                 <p class="portfolio__source">Журнал «LNK»</p >
                 <h3 class="portfolio__title">«Зачем поцелуи нужны человеку? И какие они бывают»</h3>
-                <p class="portfolio__text">Поцелуи — повсеместная ежедневная практика. Но зачем люди целуются? Какие смысли вкладывают в этот ритуал? И где корни этой практики?</p>
+                <p>Поцелуи — повсеместная ежедневная практика. Но зачем люди целуются? Какие смысли вкладывают в этот ритуал? И где корни этой практики?</p>
               </a>
             </li>
             <li class="portfolio__item portfolio__item--distant">
               <a href="motivation.html">
                 <p class="portfolio__source">Журнал «Т — Л»</p >
                 <h3 class="portfolio__title">«Советы по эффективной удалённой работе»</h3>
-                <p class="portfolio__text">Поделилась лайфхаками, которые помогают мне работать продуктивно из дома. </p>
+                <p>Поделилась лайфхаками, которые помогают мне работать продуктивно из дома. </p>
               </a>
             </li>
-          </ul>
-
-        <button class="button">Показать ещё</button>
+        </ul>
+        <div class="button__wrap">
+          <button class="button uppercase">Показать ещё</button>
+        </div>
       </section>
       <section class="write-me">
         <h2 class="title" id="write-me">Написать мне</h2>
-        <div class="write-me__wrapper">
-          <form action="" method="POST">
-            <label class="write-me__name-label" for="name-id">Ваше имя</label>
-            <input class="write-me__input" type="text" name="name" id="name-id" placeholder="Иван Иванов" required>
-            <label class="write-me__email-label" for="email-id">Email</label>
-            <input class="write-me__input" type="email" name="email" id="email-id" placeholder="google@gmail.com" required> 
+          <form class="write-me__wrapper" action="" method="POST">
+            <div class="write-me__container">
+              <label class="write-me__name-label" for="name-id">Ваше имя</label>
+              <input class="write-me__input" type="text" name="name" id="name-id" placeholder="Иван Иванов" required>
+              <label class="write-me__email-label" for="email-id">Email</label>
+              <input class="write-me__input" type="email" name="email" id="email-id" placeholder="google@gmail.com" required>
+            </div> 
             <label class="write-me__textarea-label" for="message-id">Сообщение</label>
-            <textarea class="write-me__input write-me__input--textarea" name="message" id="message-id" rows="8" cols="80" placeholder="Напишите здесь ваше сообщение" required></textarea>
-            <input class="button" type="submit" value="Отправить">
+            <textarea class="write-me__input write-me__input--textarea" name="message" id="message-id" minlength="10" maxlength="200" rows="8" cols="80" placeholder="Напишите здесь ваше сообщение" required></textarea>
+            <div class="button__wrap">
+              <input class="button uppercase" type="submit" value="Отправить">
+            </div>
+            
           </form>
-        </div>
+
       </section>
     </main>
     <footer class="page-footer">

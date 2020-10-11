@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-<title>Анна. Личный блог</title>
+<title>Как себя мотивировать</title>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Spectral+SC:wght@700&display=swap" rel="stylesheet">
 <link href="css/normalize.css" rel="stylesheet">
@@ -11,10 +11,11 @@
 
   <body>
     <header class="page-header motivation-picture">
-      <a class="page-header__logo">
-        <img class="page-header__logo-image" src="img/logo.png" alt="Логотип">
-      </a>
+      <div class="wrap">
       <nav class="page-nav">
+        <a class="page-header__logo" href="index.html">
+          <img class="page-header__logo-image" src="img/logo.png" alt="Логотип">
+        </a>
         <ul class="page-nav__list">
           <li>
             <a href="index.html#article">Статья</a>
@@ -30,12 +31,15 @@
           </li>
         </ul>
       </nav>
+      </div>
     </header>
-    <main class="page-motivation">
+    <main class="page-main">
       <section class="article-motivation">
-        <h2 class="title title--left">Как себя мотивировать</h2>
-        <span class="article__tag">Теги: путешествия, друзья</span>
-        <time class="article__time" datetime="2020.09.29">29.09.2020</time>
+        <h2 class="title title--left title--low-margin">Как себя мотивировать</h2>
+        <p class="article__info">
+          <span class="article__tag">Теги: путешествия, друзья</span>
+          <time class="article__time" datetime="2020.09.29">29.09.2020</time>
+        </p>
         <p class="article__text">Расскажу о биопсихологической теории личности Джеффри Грея, которая помогла мне разобраться в работе мотивационных стимулов. Узнала я о ней из книги «Воля и самоконтроль. Как гены и мозг мешают нам бороться с соблазнами» Ирины Якутенко.</p>
         <p class="article__text">Согласно этой теории, человеческое поведение контролируют две системы: BAS (Behavior Activation System) и BIS (Behavior Inhibition System), каждая из них обусловлена генетически. Грей использовал её для понимания того, как вознаграждение или наказание связаны с беспокойством и импульсивностью. Самое интересное, что активность этих систем у людей различна. Зная, какая из них доминирует, можно понять, какие стимулы использовать для эффективной мотивации.</p>
         <figure class="article__wrapper">
@@ -44,24 +48,26 @@
         </figure>
         <p class="article__text">BAS (Behavior Activation System) работает на ощущение позитивных эмоций. Мотивация людей, чье поведение в основном определяется этой системой, направлена на получение вознаграждения. Они стремятся получить одобрение и награду за свои действия. Такие люди более мотивированы в учебе и развитии разных навыков. Однако носители активной BAS склонны к импульсивности и желанию немедленного вознаграждения, что может мешать долгосрочной работе. BIS (Behavior Inhibition System) ответственна за избегающее поведение. Люди с этой активной системой мотивируются стремлением избежать проблем. Они более чувствительны к наказанию и новому опыту, а также стремятся избежать ситуаций, когда чувствуют, что могут потерпеть неудачу.</p>
         <p class="article__text">Определив, к какому типу относится поведение, вы узнаете, какие стимулы использовать для достижения поставленной цели. Например, я решила выучить английский — само изучение не является целью, поэтому нужно правильно её сформулировать. Если моё поведение регулируется BAS, мне нужно выбрать своей конечной целью какую-то награду: например, если я выучу английский, то смогу смотреть фильмы в оригинале. Если же я склонна к BIS поведению, целью нужно выбрать избежание проблем: если я заговорю на английском, то не потеряюсь в новой стране. И это можно использовать в различных сферах жизни.</p>
-        <div class="like">
-          <button class="like__button"></button>
-          <span class="like__meter">16</span>
+        <div class="social-buttons">
+          <div class="like">
+            <button class="like__button"></button>
+            <span class="like__meter">16</span>
+          </div>
+          <div class="social">
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link social__link--twitter" href=""><span class="visually-hidden">Twitter</span></a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--facebook" href=""><span class="visually-hidden">Facebook</span></a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--vkontakte" href=""><span class="visually-hidden">Вконтакте</span></a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="social">
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link social__link--twitter"></a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--facebook"></a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--vkontakte"></a>
-            </li>
-          </ul>
-        </div>
-        <button class="back">Ко всем статьям</button>
+        <a class="back" href="index.html">Ко всем статьям</a>
       </section>
       <section class="comment">
         <div class="comment__wrapper">
@@ -87,12 +93,18 @@
         <div class="comment__write">
           <h2 class="comment__write__title">Оставить комментарий</h2>
           <form action="" method="POST">
-            <label class="comment__label" for="commentator-name-id">Имя</label>
-            <input class="comment__input" type="text" name="commentator-name" id="commentator-name-id" required>
-            <label class="comment__label" for="commentator-email-id">Почта</label>
-            <input class="comment__input" type="email" name="commentator-email" id="commentator-email-id" required>
-            <textarea class="comment__textarea" name="comment__new-text" rows="" cols=" " placeholder="Написать комментарий..." required></textarea>
-            <input class="button" type="submit" value="Отправить">
+            <div class="comment__write__conteiner">
+              <p>
+              <label class="comment__label" for="commentator-name-id">Имя</label>
+              <input class="comment__input" type="text" name="commentator-name" id="commentator-name-id" required>
+              </p>
+              <p>
+              <label class="comment__label" for="commentator-email-id">Почта</label>
+              <input class="comment__input" type="email" name="commentator-email" id="commentator-email-id" required>
+              </p>
+              <input class="button" type="submit" value="Отправить">
+            </div>
+            <textarea class="comment__textarea" name="comment__new-text" rows="" cols=" " minlength="10" maxlength="200" placeholder="Написать комментарий..." required></textarea>
           </form>
         </div>
       </section>
