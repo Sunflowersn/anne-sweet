@@ -93,15 +93,15 @@
         </div>
         <div class="comment__write">
           <h2 class="comment__write__title">Оставить комментарий</h2>
-          <form action="" method="POST">
+          <form class="comment__form" action="" method="POST">
             <div class="comment__write__conteiner">
               <p>
               <label class="comment__label" for="commentator-name-id">Имя</label>
-              <input class="comment__input" type="text" name="commentator-name" id="commentator-name-id" required>
+              <input class="comment__input commentator-name" type="text" name="commentator-name" id="commentator-name-id" required>
               </p>
               <p>
               <label class="comment__label" for="commentator-email-id">Почта</label>
-              <input class="comment__input" type="email" name="commentator-email" id="commentator-email-id" required>
+              <input class="comment__input commentator-email" type="email" name="commentator-email" id="commentator-email-id" required>
               </p>
               <input class="button" type="submit" value="Отправить">
             </div>
@@ -126,4 +126,5 @@
         </ul>
       </footer>
       <script src="js/like.js"></script>
+      <script src="js/comment.js"></script>
     </main>
