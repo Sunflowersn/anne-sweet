@@ -161,6 +161,11 @@ a {
   color: #2E2F22;
 }
 
+.article-information {
+  display: flex;
+  justify-content: space-between;
+}
+
 .text-info {
 text-align: right;
 }
@@ -454,6 +459,10 @@ text-align: right;
   background-repeat: no-repeat;
   background-position: -50px 0;
 
+}
+
+.added {
+  background-color: red;
 }
 
 .like__meter {
