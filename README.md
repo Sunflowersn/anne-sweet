@@ -1,6 +1,6 @@
 Мой первый сайт 
 Создание сайта в рамках марафона "Заверстаю 2.0"
-Можно посмотреть по ссылке https://github.com/Sunflowersn/anne-sweet/settings
+Можно посмотреть по ссылке https://sunflowersn.github.io/anne-sweet/
 
 В ходе работы выполнено следующее: 
 
