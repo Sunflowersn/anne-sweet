@@ -53,7 +53,7 @@
         <option value="all">Все темы</option>
       </select>
       <ul class="article__list">
-        <li class="article__item">
+        <li class="article__item" data-category="travels">
           <a href="motivation.html">
             <img class="article__img" src="img/berlin.jpg" alt="Улица Берлина" width="387" height="268">
             <h3>Путешествие в Берлин в августе</h3>
@@ -65,7 +65,7 @@
             </p>
           </a>
         </li>
-        <li class="article__item">
+        <li class="article__item" data-category="city">
           <a href="motivation.html">
             <img class="article__img" src="img/coffee.jpg" alt="Две кружки холодного кофе" width="387" height="268">
             <h3>Где выпить колдбрю в Москве</h3>
@@ -76,7 +76,7 @@
             </p>
           </a>
         </li>
-        <li class="article__item">
+        <li class="article__item" data-category="books">
           <a href="motivation.html">
             <img class="article__img" src="img/books.jpg" alt="Стопка книг" width="387" height="268">
             <h3>Прочитано: книжные рекомендации</h3>
@@ -87,7 +87,7 @@
             </p>
           </a>
         </li>
-        <li class="article__item article__item--big">
+        <li class="article__item article__item--big" data-category="photo">
           <a href="motivation.html">
             <img class="article__img" src="img/rose.jpg" alt="Куст розы" width="590" height="552">
             <div class="article__item--big__conteiner">
@@ -100,7 +100,7 @@
             </div>
           </a>
         </li>
-        <li class="article__item article__item--big">
+        <li class="article__item article__item--big" data-category="recipe">
           <a href="motivation.html">
             <img class="article__img" src="img/cheesecake.jpg" alt="Кусочек чизкейка" width="590" height="552">
             <div class="article__item--big__conteiner">
@@ -181,7 +181,7 @@
         <textarea class="write-me__input write-me__input--textarea" name="message" id="message-id" minlength="10"
           maxlength="200" rows="8" cols="80" placeholder="Напишите здесь ваше сообщение" required></textarea>
         <div class="button__wrap">
-          <input class="button uppercase" type="submit" value="Отправить">
+          <input class="button uppercase submit-button" type="submit" value="Отправить">
         </div>
       </form>
     </section>
@@ -202,6 +202,8 @@
       </li>
     </ul>
   </footer>
+  <script src="js/filter.js"></script>
+  <script src="js/writeMe.js"></script>
 </body>
 
 </html>

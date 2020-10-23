@@ -471,6 +471,11 @@ margin-top: 0px;
   overflow: auto;
 }
 
+.write-me__input--textarea.warning:focus {
+  border-color: red;
+  color: red;
+}
+
 .page-footer {
   width: 1440px;
   height: 181px;
