@@ -124,13 +124,9 @@ a {
   transition: all 0.5s ease;
 }
 
+.page-nav__list a:hover,
 .page-nav__list a:active {
-  color: #ACC5D8;
-  transition: all 0.5s ease;
-}
-
-.page-nav__list a:active {
-  color: #ACC5D8B3;
+  color: #75a8cf;
   transition: all 0.5s ease;
 }
 
@@ -552,10 +548,6 @@ margin-top: 0px;
   outline: none;
   cursor: pointer;
   transition: all 0.5s ease;
-}
-
-.added {
-
 }
 
 .like__button:hover path,
